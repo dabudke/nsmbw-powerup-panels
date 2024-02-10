@@ -1,0 +1,18 @@
+:root {
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+
+	--space: rgb(240, 240, 240);
+	--space-active: rgb(120, 100, 255);
+	--space-active-shadow: rgb(83, 70, 170);
+
+	--space-highlight: rgb(113, 255, 106);
+	--space-bad: rgb(255, 178, 170);
+
+	--button: slateblue;
+	--button-shadow: darkslateblue;
+	--button-hover: rgb(113, 120, 219);
+	--button-disabled: slategray;
+	--button-text: white;
+}
