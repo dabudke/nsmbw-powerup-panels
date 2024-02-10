@@ -9,6 +9,7 @@
 		PowerUpAlt,
 		type Grid
 	} from '$lib/grid';
+	import { base } from '$app/paths';
 
 	let currentWorld: number | undefined;
 	function worldSelect(world: number) {
@@ -140,7 +141,7 @@
 </section>
 
 <span class="links">
-	<a href="/layouts/">View boards</a>
+	<a href="{base}/layouts/">View boards</a>
 	&bull;
 	<a href="https://github.com/dabudke/nsmbw-powerup-panels">View source</a>
 </span>

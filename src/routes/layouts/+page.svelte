@@ -1,7 +1,8 @@
 <script lang="ts">
 	import Button from '$lib/Button.svelte';
 	import GridView from '$lib/GridView.svelte';
-	import { worlds, type Grid, PowerUp } from '$lib/grid';
+	import { worlds, type Grid } from '$lib/grid';
+	import { base } from '$app/paths';
 
 	let currentWorld: number | undefined;
 	let determiners: [number, number][] = [];
@@ -25,6 +26,10 @@
 		};
 	}
 </script>
+
+<svelte:head>
+	<title>NSMBW Power-Up Panels Layout Viewer</title>
+</svelte:head>
 
 <GridView {grid} highlighted={determiners} />
 
@@ -64,7 +69,7 @@
 </section>
 
 <span class="links">
-	<a href="/">Go to solver</a>
+	<a href="{base}/">Go to solver</a>
 	&bull;
 	<a href="https://github.com/dabudke/nsmbw-powerup-panels">View source</a>
 </span>
