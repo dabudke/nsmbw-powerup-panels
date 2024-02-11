@@ -5,7 +5,7 @@
 	export let active: number[] | undefined = undefined;
 	export let highlighted: number[][];
 	export let grid: WorkingGrid;
-	export let highlightAll: boolean = true;
+	export let highlightAll: boolean = false;
 </script>
 
 <main>
