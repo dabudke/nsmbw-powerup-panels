@@ -10,6 +10,7 @@
 		type Grid
 	} from '$lib/grid';
 	import { base } from '$app/paths';
+	import type { Snapshot } from './$types';
 
 	let currentWorld: number | undefined;
 	function worldSelect(world: number) {
@@ -67,6 +68,25 @@
 		restart();
 		currentWorld = undefined;
 	}
+
+	export const snapshot: Snapshot<{
+		currentWorld: number | undefined;
+		grid: WorkingGrid;
+		currentSpace: number;
+	}> = {
+		capture: () => ({
+			currentWorld,
+			grid,
+			currentSpace
+		}),
+		restore: (s) => {
+			currentWorld = s.currentWorld;
+			grid = s.grid;
+			currentSpace = s.currentSpace;
+			possibleGrids = currentWorld ? Array.from(worlds[currentWorld].grids) : [];
+			gridFilter();
+		}
+	};
 </script>
 
 <svelte:head>

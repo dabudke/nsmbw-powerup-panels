@@ -3,6 +3,7 @@
 	import GridView from '$lib/GridView.svelte';
 	import { worlds, type Grid } from '$lib/grid';
 	import { base } from '$app/paths';
+	import type { Snapshot } from './$types';
 
 	let currentWorld: number | undefined;
 	let determiners: [number, number][] = [];
@@ -25,6 +26,20 @@
 			grid = worlds[currentWorld!].grids[currentLayout];
 		};
 	}
+
+	export const snapshot: Snapshot<{
+		currentWorld: number | undefined;
+		currentLayout: number | undefined;
+	}> = {
+		capture: () => ({
+			currentWorld,
+			currentLayout
+		}),
+		restore: (s) => {
+			currentWorld = s.currentWorld;
+			currentLayout = s.currentLayout;
+		}
+	};
 </script>
 
 <svelte:head>
