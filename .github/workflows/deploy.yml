@@ -37,10 +37,6 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
-          cache: yarn
-
-      - name: Setup Corepack
-        run: corepack enable
 
       # Runs a set of commands using the runners shell
       - name: Install dependencies
