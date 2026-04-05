@@ -40,10 +40,11 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: lts/*
+          cache: yarn
 
       # Runs a set of commands using the runners shell
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install
 
       - name: Build site
         run: yarn build
@@ -51,7 +52,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: 'build/'
+          path: 'dist/'
 
   deploy:
     needs: build
@@ -64,4 +65,4 @@ jobs:
     steps:
       - name: Deploy site
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v5
