@@ -16,12 +16,14 @@ export default function PowerUpButtons({
   onClick
 }: PropsWithoutRef<Props>) {
   return (
-    <ButtonRow>
-      {powerUps.map((powerUp, i) => (
-        <Button key={i} square disabled={disabled} onClick={() => onClick(powerUp)}>
-          <PowerUp powerup={powerUp} />
-        </Button>
-      ))}
-    </ButtonRow>
+    powerUps.length > 0 && (
+      <ButtonRow>
+        {powerUps.map((powerUp, i) => (
+          <Button key={i} square disabled={disabled} onClick={() => onClick(powerUp)}>
+            <PowerUp powerup={powerUp} />
+          </Button>
+        ))}
+      </ButtonRow>
+    )
   );
 }

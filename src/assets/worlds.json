@@ -1,0 +1,1059 @@
+[
+  {
+    "determiners": [
+      [1, 0],
+      [2, 0],
+      [1, 2]
+    ],
+    "grids": [
+      [
+        [
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Super Mushroom",
+          "Bowser",
+          "Bowser Junior"
+        ],
+        [
+          "Super Mushroom",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Bowser",
+          "Ice Flower",
+          "Propeller Mushroom"
+        ],
+        [
+          "Fire Flower",
+          "Bowser Junior",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Fire Flower"
+        ]
+      ],
+      [
+        [
+          "Bowser Junior",
+          "Ice Flower",
+          "Fire Flower",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Propeller Mushroom"
+        ],
+        [
+          "Fire Flower",
+          "Bowser",
+          "Propeller Mushroom",
+          "Super Mushroom",
+          "Ice Flower",
+          "Bowser Junior"
+        ],
+        [
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Super Mushroom",
+          "Bowser",
+          "Fire Flower",
+          "Ice Flower"
+        ]
+      ],
+      [
+        [
+          "Bowser Junior",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Super Mushroom",
+          "Star",
+          "Propeller Mushroom"
+        ],
+        ["Super Mushroom", "Ice Flower", "Fire Flower", "Bowser", "Ice Flower", "Star"],
+        ["Fire Flower", "Bowser Junior", "Ice Flower", "Bowser", "Fire Flower", "Ice Flower"]
+      ],
+      [
+        [
+          "Propeller Mushroom",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Fire Flower",
+          "Bowser",
+          "Propeller Mushroom"
+        ],
+        ["Fire Flower", "Bowser", "Fire Flower", "Super Mushroom", "Ice Flower", "Bowser Junior"],
+        [
+          "Ice Flower",
+          "Bowser Junior",
+          "Super Mushroom",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Ice Flower"
+        ]
+      ],
+      [
+        [
+          "Ice Flower",
+          "Ice Flower",
+          "Fire Flower",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Bowser Junior"
+        ],
+        ["Super Mushroom", "Bowser", "Fire Flower", "Bowser", "Fire Flower", "Star"],
+        [
+          "Ice Flower",
+          "Star",
+          "Super Mushroom",
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Ice Flower"
+        ]
+      ],
+      [
+        [
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Ice Flower",
+          "Super Mushroom",
+          "Bowser",
+          "Propeller Mushroom"
+        ],
+        [
+          "Fire Flower",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Super Mushroom",
+          "Fire Flower",
+          "Bowser Junior"
+        ],
+        [
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Bowser",
+          "Bowser Junior",
+          "Fire Flower"
+        ]
+      ]
+    ]
+  },
+  {
+    "determiners": [
+      [0, 1],
+      [0, 3]
+    ],
+    "grids": [
+      [
+        [
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Star",
+          "Propeller Mushroom"
+        ],
+        ["Star", "Fire Flower", "Bowser", "Ice Flower", "Mini Mushroom", "Bowser Junior"],
+        [
+          "Mini Mushroom",
+          "Bowser",
+          "Fire Flower",
+          "Bowser Junior",
+          "Ice Flower",
+          "Propeller Mushroom"
+        ]
+      ],
+      [
+        [
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Bowser Junior",
+          "Propeller Mushroom"
+        ],
+        [
+          "Bowser",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Mini Mushroom",
+          "Bowser Junior"
+        ],
+        ["Ice Flower", "Fire Flower", "Fire Flower", "Mini Mushroom", "Bowser", "Fire Flower"]
+      ],
+      [
+        [
+          "Bowser Junior",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Propeller Mushroom"
+        ],
+        [
+          "Mini Mushroom",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Mini Mushroom",
+          "Mini Mushroom"
+        ],
+        ["Mini Mushroom", "Bowser", "Fire Flower", "Bowser Junior", "Bowser", "Fire Flower"]
+      ],
+      [
+        [
+          "Bowser Junior",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Bowser"
+        ],
+        ["Mini Mushroom", "Fire Flower", "Bowser", "Ice Flower", "Bowser Junior", "Mini Mushroom"],
+        [
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Propeller Mushroom"
+        ]
+      ],
+      [
+        [
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Bowser",
+          "Ice Flower",
+          "Star",
+          "Propeller Mushroom"
+        ],
+        [
+          "Bowser",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Bowser Junior",
+          "Bowser Junior"
+        ],
+        [
+          "Mini Mushroom",
+          "Star",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Fire Flower"
+        ]
+      ],
+      [
+        ["Propeller Mushroom", "Mini Mushroom", "Bowser", "Ice Flower", "Bowser Junior", "Bowser"],
+        [
+          "Mini Mushroom",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Mini Mushroom",
+          "Mini Mushroom"
+        ],
+        [
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Ice Flower",
+          "Fire Flower"
+        ]
+      ]
+    ]
+  },
+  {
+    "determiners": [
+      [2, 0],
+      [1, 2],
+      [2, 3]
+    ],
+    "grids": [
+      [
+        ["Bowser Junior", "Bowser", "Bowser", "Mini Mushroom", "Star", "Penguin Suit"],
+        [
+          "Fire Flower",
+          "Penguin Suit",
+          "Penguin Suit",
+          "Ice Flower",
+          "Bowser Junior",
+          "Mini Mushroom"
+        ],
+        [
+          "Ice Flower",
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Propeller Mushroom",
+          "Star",
+          "Fire Flower"
+        ]
+      ],
+      [
+        ["Ice Flower", "Mini Mushroom", "Bowser", "Penguin Suit", "Mini Mushroom", "Penguin Suit"],
+        ["Fire Flower", "Mini Mushroom", "Mini Mushroom", "Fire Flower", "Penguin Suit", "Bowser"],
+        [
+          "Penguin Suit",
+          "Bowser Junior",
+          "Fire Flower",
+          "Fire Flower",
+          "Bowser Junior",
+          "Ice Flower"
+        ]
+      ],
+      [
+        ["Star", "Bowser", "Penguin Suit", "Propeller Mushroom", "Bowser Junior", "Penguin Suit"],
+        [
+          "Mini Mushroom",
+          "Mini Mushroom",
+          "Penguin Suit",
+          "Fire Flower",
+          "Bowser Junior",
+          "Bowser"
+        ],
+        ["Ice Flower", "Penguin Suit", "Propeller Mushroom", "Fire Flower", "Star", "Ice Flower"]
+      ],
+      [
+        [
+          "Ice Flower",
+          "Mini Mushroom",
+          "Penguin Suit",
+          "Penguin Suit",
+          "Mini Mushroom",
+          "Ice Flower"
+        ],
+        ["Ice Flower", "Bowser", "Mini Mushroom", "Fire Flower", "Bowser Junior", "Bowser"],
+        [
+          "Penguin Suit",
+          "Penguin Suit",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Bowser Junior",
+          "Ice Flower"
+        ]
+      ],
+      [
+        ["Bowser Junior", "Bowser", "Bowser", "Mini Mushroom", "Mini Mushroom", "Penguin Suit"],
+        [
+          "Fire Flower",
+          "Penguin Suit",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Penguin Suit",
+          "Mini Mushroom"
+        ],
+        ["Ice Flower", "Bowser Junior", "Fire Flower", "Fire Flower", "Penguin Suit", "Ice Flower"]
+      ],
+      [
+        ["Ice Flower", "Mini Mushroom", "Bowser", "Mini Mushroom", "Bowser Junior", "Ice Flower"],
+        ["Ice Flower", "Mini Mushroom", "Penguin Suit", "Ice Flower", "Penguin Suit", "Bowser"],
+        [
+          "Penguin Suit",
+          "Bowser Junior",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Penguin Suit",
+          "Fire Flower"
+        ]
+      ]
+    ]
+  },
+  {
+    "determiners": [
+      [0, 1],
+      [0, 5],
+      [1, 4]
+    ],
+    "grids": [
+      [
+        [
+          "Bowser",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Penguin Suit"
+        ],
+        [
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Ice Flower",
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Ice Flower"
+        ],
+        ["Bowser", "Mini Mushroom", "Fire Flower", "Star", "Penguin Suit", "Star"]
+      ],
+      [
+        [
+          "Bowser Junior",
+          "Penguin Suit",
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Penguin Suit"
+        ],
+        [
+          "Mini Mushroom",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Mini Mushroom",
+          "Ice Flower",
+          "Ice Flower"
+        ],
+        ["Bowser", "Bowser", "Propeller Mushroom", "Fire Flower", "Mini Mushroom", "Penguin Suit"]
+      ],
+      [
+        [
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Penguin Suit"
+        ],
+        [
+          "Mini Mushroom",
+          "Bowser Junior",
+          "Mini Mushroom",
+          "Bowser",
+          "Ice Flower",
+          "Bowser Junior"
+        ],
+        [
+          "Penguin Suit",
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Penguin Suit",
+          "Bowser"
+        ]
+      ],
+      [
+        [
+          "Bowser",
+          "Penguin Suit",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Penguin Suit"
+        ],
+        [
+          "Mini Mushroom",
+          "Bowser Junior",
+          "Ice Flower",
+          "Bowser",
+          "Propeller Mushroom",
+          "Bowser Junior"
+        ],
+        [
+          "Penguin Suit",
+          "Mini Mushroom",
+          "Ice Flower",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Penguin Suit"
+        ]
+      ],
+      [
+        [
+          "Bowser Junior",
+          "Propeller Mushroom",
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Star",
+          "Propeller Mushroom"
+        ],
+        [
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Bowser",
+          "Ice Flower",
+          "Ice Flower"
+        ],
+        ["Penguin Suit", "Bowser", "Fire Flower", "Bowser Junior", "Mini Mushroom", "Star"]
+      ],
+      [
+        [
+          "Penguin Suit",
+          "Penguin Suit",
+          "Penguin Suit",
+          "Fire Flower",
+          "Bowser Junior",
+          "Propeller Mushroom"
+        ],
+        [
+          "Mini Mushroom",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Ice Flower"
+        ],
+        ["Penguin Suit", "Bowser", "Ice Flower", "Bowser Junior", "Mini Mushroom", "Bowser"]
+      ]
+    ]
+  },
+  {
+    "determiners": [
+      [2, 3],
+      [2, 4]
+    ],
+    "grids": [
+      [
+        ["Ice Flower", "Penguin Suit", "Fire Flower", "Ice Flower", "Star", "Ice Flower"],
+        ["Propeller Mushroom", "Bowser", "Bowser Junior", "Star", "Bowser", "Bowser Junior"],
+        [
+          "Ice Flower",
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Mini Mushroom"
+        ]
+      ],
+      [
+        [
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Bowser",
+          "Ice Flower"
+        ],
+        [
+          "Ice Flower",
+          "Bowser",
+          "Bowser Junior",
+          "Penguin Suit",
+          "Fire Flower",
+          "Propeller Mushroom"
+        ],
+        [
+          "Fire Flower",
+          "Penguin Suit",
+          "Bowser Junior",
+          "Ice Flower",
+          "Mini Mushroom",
+          "Fire Flower"
+        ]
+      ],
+      [
+        [
+          "Ice Flower",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Penguin Suit",
+          "Propeller Mushroom"
+        ],
+        ["Ice Flower", "Bowser", "Ice Flower", "Penguin Suit", "Fire Flower", "Bowser Junior"],
+        [
+          "Fire Flower",
+          "Bowser",
+          "Bowser Junior",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Fire Flower"
+        ]
+      ],
+      [
+        [
+          "Bowser",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Ice Flower",
+          "Penguin Suit",
+          "Propeller Mushroom"
+        ],
+        [
+          "Propeller Mushroom",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Bowser Junior",
+          "Bowser",
+          "Bowser Junior"
+        ],
+        [
+          "Ice Flower",
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Ice Flower",
+          "Mini Mushroom"
+        ]
+      ],
+      [
+        [
+          "Bowser",
+          "Mini Mushroom",
+          "Bowser Junior",
+          "Ice Flower",
+          "Penguin Suit",
+          "Propeller Mushroom"
+        ],
+        ["Ice Flower", "Star", "Ice Flower", "Star", "Fire Flower", "Bowser Junior"],
+        [
+          "Ice Flower",
+          "Bowser",
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Penguin Suit",
+          "Fire Flower"
+        ]
+      ],
+      [
+        [
+          "Bowser",
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Mini Mushroom",
+          "Bowser",
+          "Propeller Mushroom"
+        ],
+        [
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Bowser Junior",
+          "Fire Flower",
+          "Propeller Mushroom"
+        ],
+        ["Ice Flower", "Penguin Suit", "Mini Mushroom", "Ice Flower", "Penguin Suit", "Fire Flower"]
+      ]
+    ]
+  },
+  {
+    "determiners": [
+      [0, 2],
+      [2, 1],
+      [1, 5]
+    ],
+    "grids": [
+      [
+        ["Bowser", "Star", "Ice Flower", "Propeller Mushroom", "Bowser", "Fire Flower"],
+        ["Fire Flower", "Star", "Fire Flower", "Bowser Junior", "Bowser Junior", "Fire Flower"],
+        [
+          "Mini Mushroom",
+          "Ice Flower",
+          "Penguin Suit",
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Mini Mushroom"
+        ]
+      ],
+      [
+        [
+          "Bowser",
+          "Bowser Junior",
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Bowser Junior"
+        ],
+        [
+          "Mini Mushroom",
+          "Fire Flower",
+          "Fire Flower",
+          "Ice Flower",
+          "Fire Flower",
+          "Penguin Suit"
+        ],
+        [
+          "Mini Mushroom",
+          "Ice Flower",
+          "Penguin Suit",
+          "Bowser",
+          "Propeller Mushroom",
+          "Mini Mushroom"
+        ]
+      ],
+      [
+        [
+          "Bowser",
+          "Bowser Junior",
+          "Ice Flower",
+          "Penguin Suit",
+          "Fire Flower",
+          "Propeller Mushroom"
+        ],
+        ["Fire Flower", "Bowser", "Ice Flower", "Ice Flower", "Bowser Junior", "Fire Flower"],
+        [
+          "Mini Mushroom",
+          "Fire Flower",
+          "Penguin Suit",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Mini Mushroom"
+        ]
+      ],
+      [
+        [
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Propeller Mushroom",
+          "Penguin Suit",
+          "Fire Flower"
+        ],
+        ["Mini Mushroom", "Star", "Ice Flower", "Star", "Bowser Junior", "Penguin Suit"],
+        ["Ice Flower", "Fire Flower", "Bowser", "Bowser", "Fire Flower", "Bowser Junior"]
+      ],
+      [
+        [
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Penguin Suit",
+          "Bowser",
+          "Propeller Mushroom"
+        ],
+        [
+          "Mini Mushroom",
+          "Fire Flower",
+          "Ice Flower",
+          "Ice Flower",
+          "Bowser Junior",
+          "Fire Flower"
+        ],
+        ["Ice Flower", "Ice Flower", "Bowser", "Penguin Suit", "Fire Flower", "Bowser Junior"]
+      ],
+      [
+        [
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Penguin Suit",
+          "Bowser Junior"
+        ],
+        ["Mini Mushroom", "Bowser", "Ice Flower", "Bowser Junior", "Fire Flower", "Penguin Suit"],
+        ["Mini Mushroom", "Fire Flower", "Bowser", "Ice Flower", "Fire Flower", "Mini Mushroom"]
+      ]
+    ]
+  },
+  {
+    "determiners": [
+      [0, 4],
+      [0, 5],
+      [2, 5]
+    ],
+    "grids": [
+      [
+        [
+          "Propeller Mushroom",
+          "Bowser",
+          "Bowser Junior",
+          "Ice Flower",
+          "Ice Flower",
+          "Propeller Mushroom"
+        ],
+        ["Propeller Mushroom", "Star", "Mini Mushroom", "Penguin Suit", "Bowser", "Star"],
+        [
+          "Fire Flower",
+          "Bowser Junior",
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Penguin Suit"
+        ]
+      ],
+      [
+        [
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Bowser Junior",
+          "Ice Flower",
+          "Mini Mushroom",
+          "Mini Mushroom"
+        ],
+        ["Bowser", "Bowser Junior", "Ice Flower", "Penguin Suit", "Bowser", "Mini Mushroom"],
+        [
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Propeller Mushroom"
+        ]
+      ],
+      [
+        [
+          "Bowser",
+          "Fire Flower",
+          "Bowser Junior",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Propeller Mushroom"
+        ],
+        ["Bowser", "Star", "Propeller Mushroom", "Penguin Suit", "Ice Flower", "Bowser Junior"],
+        [
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Penguin Suit",
+          "Mini Mushroom",
+          "Star",
+          "Mini Mushroom"
+        ]
+      ],
+      [
+        [
+          "Propeller Mushroom",
+          "Bowser",
+          "Propeller Mushroom",
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Mini Mushroom"
+        ],
+        ["Bowser", "Mini Mushroom", "Ice Flower", "Mini Mushroom", "Ice Flower", "Bowser Junior"],
+        [
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Penguin Suit",
+          "Fire Flower",
+          "Bowser Junior",
+          "Penguin Suit"
+        ]
+      ],
+      [
+        [
+          "Bowser",
+          "Fire Flower",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Ice Flower",
+          "Mini Mushroom"
+        ],
+        [
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Mini Mushroom",
+          "Mini Mushroom",
+          "Bowser",
+          "Bowser Junior"
+        ],
+        [
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Penguin Suit",
+          "Fire Flower",
+          "Bowser Junior",
+          "Propeller Mushroom"
+        ]
+      ],
+      [
+        [
+          "Bowser",
+          "Bowser",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Mini Mushroom",
+          "Propeller Mushroom"
+        ],
+        [
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Mini Mushroom",
+          "Penguin Suit",
+          "Ice Flower",
+          "Mini Mushroom"
+        ],
+        [
+          "Fire Flower",
+          "Bowser Junior",
+          "Propeller Mushroom",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Penguin Suit"
+        ]
+      ]
+    ]
+  },
+  {
+    "determiners": [
+      [0, 4],
+      [0, 5],
+      [2, 3]
+    ],
+    "grids": [
+      [
+        ["Mini Mushroom", "Penguin Suit", "Bowser", "Bowser Junior", "Mini Mushroom", "Ice Flower"],
+        ["Propeller Mushroom", "Fire Flower", "Star", "Star", "Bowser", "Bowser Junior"],
+        [
+          "Mini Mushroom",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Penguin Suit"
+        ]
+      ],
+      [
+        [
+          "Fire Flower",
+          "Bowser",
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Ice Flower",
+          "Penguin Suit"
+        ],
+        ["Ice Flower", "Bowser Junior", "Bowser", "Penguin Suit", "Mini Mushroom", "Fire Flower"],
+        [
+          "Mini Mushroom",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Fire Flower",
+          "Fire Flower"
+        ]
+      ],
+      [
+        [
+          "Fire Flower",
+          "Penguin Suit",
+          "Propeller Mushroom",
+          "Bowser",
+          "Mini Mushroom",
+          "Ice Flower"
+        ],
+        ["Mini Mushroom", "Fire Flower", "Ice Flower", "Penguin Suit", "Bowser", "Bowser Junior"],
+        [
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Ice Flower",
+          "Fire Flower",
+          "Fire Flower"
+        ]
+      ],
+      [
+        ["Fire Flower", "Bowser", "Propeller Mushroom", "Bowser", "Ice Flower", "Penguin Suit"],
+        [
+          "Ice Flower",
+          "Bowser Junior",
+          "Ice Flower",
+          "Penguin Suit",
+          "Mini Mushroom",
+          "Bowser Junior"
+        ],
+        [
+          "Mini Mushroom",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Fire Flower",
+          "Fire Flower"
+        ]
+      ],
+      [
+        ["Mini Mushroom", "Penguin Suit", "Bowser", "Star", "Mini Mushroom", "Penguin Suit"],
+        ["Mini Mushroom", "Bowser Junior", "Bowser", "Star", "Mini Mushroom", "Bowser Junior"],
+        [
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Fire Flower",
+          "Fire Flower"
+        ]
+      ],
+      [
+        [
+          "Mini Mushroom",
+          "Bowser",
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Ice Flower",
+          "Ice Flower"
+        ],
+        ["Mini Mushroom", "Fire Flower", "Ice Flower", "Penguin Suit", "Bowser", "Fire Flower"],
+        [
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Bowser Junior",
+          "Fire Flower",
+          "Fire Flower",
+          "Penguin Suit"
+        ]
+      ]
+    ]
+  },
+  {
+    "determiners": [
+      [0, 1],
+      [0, 5],
+      [1, 5],
+      [2, 5]
+    ],
+    "grids": [
+      [
+        ["Bowser Junior", "Star", "Propeller Mushroom", "Fire Flower", "Star", "Star"],
+        ["Bowser", "Propeller Mushroom", "Ice Flower", "Mini Mushroom", "Star", "Fire Flower"],
+        ["Bowser Junior", "Ice Flower", "Penguin Suit", "Bowser", "Mini Mushroom", "Penguin Suit"]
+      ],
+      [
+        [
+          "Penguin Suit",
+          "Star",
+          "Bowser Junior",
+          "Fire Flower",
+          "Mini Mushroom",
+          "Propeller Mushroom"
+        ],
+        ["Star", "Bowser", "Bowser Junior", "Ice Flower", "Bowser", "Mini Mushroom"],
+        ["Fire Flower", "Ice Flower", "Penguin Suit", "Star", "Propeller Mushroom", "Star"]
+      ],
+      [
+        ["Penguin Suit", "Ice Flower", "Propeller Mushroom", "Star", "Bowser", "Star"],
+        [
+          "Bowser",
+          "Propeller Mushroom",
+          "Ice Flower",
+          "Mini Mushroom",
+          "Fire Flower",
+          "Fire Flower"
+        ],
+        ["Bowser Junior", "Bowser Junior", "Star", "Star", "Mini Mushroom", "Penguin Suit"]
+      ],
+      [
+        [
+          "Penguin Suit",
+          "Ice Flower",
+          "Bowser Junior",
+          "Star",
+          "Mini Mushroom",
+          "Propeller Mushroom"
+        ],
+        ["Star", "Propeller Mushroom", "Bowser Junior", "Ice Flower", "Bowser", "Fire Flower"],
+        ["Fire Flower", "Star", "Penguin Suit", "Bowser", "Mini Mushroom", "Star"]
+      ],
+      [
+        [
+          "Bowser Junior",
+          "Ice Flower",
+          "Penguin Suit",
+          "Fire Flower",
+          "Bowser",
+          "Propeller Mushroom"
+        ],
+        ["Star", "Bowser", "Ice Flower", "Mini Mushroom", "Star", "Mini Mushroom"],
+        ["Fire Flower", "Bowser Junior", "Star", "Star", "Propeller Mushroom", "Penguin Suit"]
+      ],
+      [
+        [
+          "Penguin Suit",
+          "Ice Flower",
+          "Propeller Mushroom",
+          "Fire Flower",
+          "Star",
+          "Propeller Mushroom"
+        ],
+        ["Star", "Bowser", "Bowser Junior", "Ice Flower", "Star", "Mini Mushroom"],
+        ["Fire Flower", "Bowser Junior", "Penguin Suit", "Bowser", "Mini Mushroom", "Star"]
+      ]
+    ]
+  }
+]
