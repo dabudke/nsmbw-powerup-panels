@@ -5,6 +5,7 @@ import Grid from './Grid';
 import PowerUpButtons from './components/PowerUpButtons';
 import ButtonRow from './components/ButtonRow';
 import Button from './components/Button';
+import { MiniGrid } from './components/GridMiniView';
 
 type GridReducerArgs =
   | {
@@ -98,6 +99,28 @@ function ActionButtons({
   );
 }
 
+type RemainingPossibilityDisplayProps = {
+  possibleGrids: GridData[];
+  determiners: Point[];
+};
+function RemainingPossibilityDisplay({
+  possibleGrids,
+  determiners
+}: PropsWithoutRef<RemainingPossibilityDisplayProps>) {
+  return (
+    <div className="mt-1 flex p-0.5 bg-gray-900 rounded-md gap-0.5">
+      {possibleGrids.map((grid, i) => (
+        <MiniGrid
+          key={i}
+          showCompleted={possibleGrids.length === 1}
+          grid={grid}
+          determiners={determiners}
+        />
+      ))}
+    </div>
+  );
+}
+
 export default function App() {
   const [currentWorld, setCurrentWorld] = useState<number | undefined>(undefined);
   const [{ grid, filledSquares }, updateGrid] = useReducer(
@@ -180,6 +203,12 @@ export default function App() {
         reset={() => updateGrid({ action: 'reset' })}
         resetAvailable={filledSquares.length > 0}
       />
+      {currentWorld !== undefined && (
+        <RemainingPossibilityDisplay
+          possibleGrids={possibleGrids}
+          determiners={world!.determiners as Point[]}
+        />
+      )}
     </>
   );
 }

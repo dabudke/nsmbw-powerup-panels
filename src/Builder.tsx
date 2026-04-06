@@ -4,7 +4,7 @@ import Grid from './Grid';
 import PowerUpButtons from './components/PowerUpButtons';
 import Button from './components/Button';
 import ButtonRow from './components/ButtonRow';
-import BuilderMiniView from './components/BuilderMiniView';
+import BuilderMiniView from './components/GridMiniView';
 import z from 'zod';
 
 const blankWorld: World = {

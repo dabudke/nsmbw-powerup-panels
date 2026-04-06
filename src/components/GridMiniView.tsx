@@ -1,7 +1,7 @@
 import { useMemo, type PropsWithoutRef } from 'react';
 import type { GridData, Point, PowerUpValue } from '../types';
 
-function BuilderMiniViewTile({
+function MiniGridTile({
   powerUp,
   determiner
 }: PropsWithoutRef<{ powerUp: PowerUpValue | undefined; determiner: boolean }>) {
@@ -41,7 +41,7 @@ function BuilderMiniViewTile({
   return (
     <div
       className={`${color} h-2.5 w-2.5 rounded-xs ${
-        determiner && 'outline-1 -outline-offset-1 outline-green-500 dark:outline-green-400'
+        determiner && 'outline-2 -outline-offset-2 outline-green-500 dark:outline-green-400'
       } ${
         danger && 'outline-1 dark:outline-2 -outline-offset-1 dark:-outline-offset-2 outline-black'
       }`}
@@ -49,13 +49,19 @@ function BuilderMiniViewTile({
   );
 }
 
-function BuilderMiniViewGrid({
+export function MiniGrid({
   grid,
   determiners,
-  selected
-}: PropsWithoutRef<{ grid: GridData | undefined; determiners: Point[]; selected: boolean }>) {
+  selected = false,
+  showCompleted = true
+}: PropsWithoutRef<{
+  grid: GridData | undefined;
+  determiners: Point[];
+  selected?: boolean;
+  showCompleted?: boolean;
+}>) {
   const complete = useMemo(() => {
-    return grid?.every((row) => row.every((val) => val != undefined)) ?? false;
+    return showCompleted && (grid?.every((row) => row.every((val) => val != undefined)) ?? false);
   }, [grid]);
   const error = useMemo(() => {
     if (!complete) return false;
@@ -95,7 +101,7 @@ function BuilderMiniViewGrid({
             className={`row-span-${rowIndex + 1} col-span-${colIndex + 1} contents`}
             key={rowIndex * 6 + colIndex}
           >
-            <BuilderMiniViewTile
+            <MiniGridTile
               powerUp={val}
               determiner={determiners.some(([row, col]) => rowIndex == row && colIndex == col)}
             />
@@ -106,7 +112,7 @@ function BuilderMiniViewGrid({
   );
 }
 
-function BuilderMiniViewWorld({
+function MiniWorldView({
   grids,
   determiners,
   selectedGrid
@@ -128,7 +134,7 @@ function BuilderMiniViewWorld({
     >
       {grids.map((grid, i) => (
         <span className={`row-span-${Math.floor(i / 2) + 1} col-span-${i % 3} contents`} key={i}>
-          <BuilderMiniViewGrid selected={selectedGrid == i} grid={grid} determiners={determiners} />
+          <MiniGrid selected={selectedGrid == i} grid={grid} determiners={determiners} />
         </span>
       ))}
     </div>
@@ -155,7 +161,7 @@ export default function BuilderMiniView({
       {worlds?.map((data, i) => (
         <span key={i} className={`col-span-${Math.floor(i / 3) + 1} row-span-${(i % 3) + 1}`}>
           {data && (
-            <BuilderMiniViewWorld
+            <MiniWorldView
               selectedGrid={selectedWorld == i ? selectedGrid : undefined}
               grids={data.grids}
               determiners={data.determiners}
