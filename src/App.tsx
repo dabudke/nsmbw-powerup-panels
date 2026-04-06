@@ -108,7 +108,7 @@ function RemainingPossibilityDisplay({
   determiners
 }: PropsWithoutRef<RemainingPossibilityDisplayProps>) {
   return (
-    <div className="mt-1 flex p-0.5 bg-gray-900 rounded-md gap-0.5">
+    <div className="mt-1 flex p-0.5 bg-gray-100 dark:bg-gray-900 rounded-md gap-0.5">
       {possibleGrids.map((grid, i) => (
         <MiniGrid
           key={i}
@@ -209,6 +209,10 @@ export default function App() {
           determiners={world!.determiners as Point[]}
         />
       )}
+      <ButtonRow>
+        <Button href="/nsmbw-powerup-panels/explorer/">See all layouts</Button>
+        <Button href="https://github.com/dabudke/nsmbw-powerup-panels/">See the source</Button>
+      </ButtonRow>
     </>
   );
 }

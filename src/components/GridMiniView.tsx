@@ -5,7 +5,7 @@ function MiniGridTile({
   powerUp,
   determiner
 }: PropsWithoutRef<{ powerUp: PowerUpValue | undefined; determiner: boolean }>) {
-  let color = 'bg-gray-200 dark:bg-gray-700';
+  let color = 'bg-gray-100 dark:bg-gray-600';
   let danger = false;
   switch (powerUp) {
     case 'Super Mushroom':
@@ -89,8 +89,8 @@ export function MiniGrid({
         error
           ? 'bg-red-300 dark:bg-red-700'
           : complete
-          ? 'bg-green-200 dark:bg-green-700'
-          : 'bg-gray-400 dark:bg-gray-800'
+          ? 'bg-green-300 dark:bg-green-700'
+          : 'bg-gray-300 dark:bg-gray-700'
       } ${
         selected ? 'outline-indigo-500 dark:outline-indigo-700' : 'outline-transparent'
       } outline-1 p-0.5 rounded-sm grid grid-cols-6 grid-rows-3 gap-0.5 transition-colors`}
@@ -112,14 +112,18 @@ export function MiniGrid({
   );
 }
 
-function MiniWorldView({
+export function MiniWorldView({
   grids,
   determiners,
-  selectedGrid
+  selectedGrid,
+  changeGrid,
+  showComplete = true
 }: PropsWithoutRef<{
   grids: (GridData | undefined)[];
   determiners: Point[];
   selectedGrid: number | undefined;
+  showComplete?: boolean;
+  changeGrid?: React.Dispatch<React.SetStateAction<number | undefined>>;
 }>) {
   const complete = useMemo(
     () =>
@@ -129,13 +133,22 @@ function MiniWorldView({
   return (
     <div
       className={`grid grid-rows-3 grid-cols-2 gap-0.5 p-0.5 rounded-md ${
-        complete ? 'bg-green-300 dark:bg-green-900' : 'bg-gray-200 dark:bg-gray-700'
+        showComplete && complete ? 'bg-green-100 dark:bg-green-900' : 'bg-gray-200 dark:bg-gray-800'
       }`}
     >
       {grids.map((grid, i) => (
-        <span className={`row-span-${Math.floor(i / 2) + 1} col-span-${i % 3} contents`} key={i}>
-          <MiniGrid selected={selectedGrid == i} grid={grid} determiners={determiners} />
-        </span>
+        <button
+          onClick={changeGrid && (() => changeGrid(i))}
+          className={`row-span-${Math.floor(i / 2) + 1} col-span-${i % 3} contents`}
+          key={i}
+        >
+          <MiniGrid
+            showCompleted={showComplete}
+            selected={selectedGrid == i}
+            grid={grid}
+            determiners={determiners}
+          />
+        </button>
       ))}
     </div>
   );
