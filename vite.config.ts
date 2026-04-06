@@ -13,7 +13,8 @@ export default defineConfig({
     rolldownOptions: {
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
-        builder: resolve(import.meta.dirname, 'builder/index.html')
+        builder: resolve(import.meta.dirname, 'builder/index.html'),
+        viewer: resolve(import.meta.dirname, 'builder/index.html')
       }
     }
   }
