@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
-import { powerUpTypes, type GridData, type Point, type PowerUpValue, type World } from './types';
+import { useEffect, useMemo, useReducer, useState } from 'react';
+import { powerUpTypes, type Point, type PowerUpValue, type World } from './types';
 import Grid from './Grid';
 import PowerUpButtons from './components/PowerUpButtons';
 import Button from './components/Button';
 import ButtonRow from './components/ButtonRow';
 import BuilderMiniView from './components/BuilderMiniView';
+import z from 'zod';
 
 const blankWorld: World = {
   determiners: [],
@@ -65,7 +66,17 @@ type WorldUpdateReducerArgs = [
 ];
 
 export default function Builder() {
-  const [currentWorld, setCurrentWorld] = useState<number>(0);
+  const [currentWorld, setCurrentWorld] = useState<number>(() => {
+    const prevWorld = window.localStorage.getItem('currentWorld');
+    if (prevWorld) {
+      const data = z.safeParse(z.number(), JSON.parse(prevWorld));
+      if (data.success) return data.data;
+    }
+    return 0;
+  });
+  useEffect(() => {
+    window.localStorage.setItem('currentWorld', JSON.stringify(currentWorld));
+  }, [currentWorld]);
 
   const [worlds, updateWorld] = useReducer<World[], WorldUpdateReducerArgs>(
     (prevState, data) => {
@@ -140,86 +151,52 @@ export default function Builder() {
         worldIndex == currentWorld ? { determiners, grids, currentGrid } : old
       );
     },
-    [
-      structuredClone(blankWorld),
-      structuredClone(blankWorld),
-      structuredClone(blankWorld),
-      structuredClone(blankWorld),
-      structuredClone(blankWorld),
-      structuredClone(blankWorld),
-      structuredClone(blankWorld),
-      structuredClone(blankWorld),
-      structuredClone(blankWorld)
-    ]
+    (() => {
+      const prevState = window.localStorage.getItem('worlds');
+      if (prevState) {
+        const result = z.safeParse(
+          z
+            .array(
+              z.object({
+                determiners: z.array(z.tuple([z.number(), z.number()])),
+                grids: z
+                  .array(z.array(z.array(z.nullable(z.string())).length(6)).length(3))
+                  .length(6),
+                currentGrid: z.number().max(5).min(0).default(0)
+              })
+            )
+            .length(9),
+          JSON.parse(prevState)
+        );
+        if (result.success) {
+          return result.data.map(({ determiners, grids, currentGrid }) => ({
+            determiners,
+            currentGrid,
+            grids: grids.map((grid) =>
+              grid.map((row) => row.map((val) => (val == null ? undefined : (val as PowerUpValue))))
+            )
+          }));
+        }
+      }
+      return [
+        structuredClone(blankWorld),
+        structuredClone(blankWorld),
+        structuredClone(blankWorld),
+        structuredClone(blankWorld),
+        structuredClone(blankWorld),
+        structuredClone(blankWorld),
+        structuredClone(blankWorld),
+        structuredClone(blankWorld),
+        structuredClone(blankWorld)
+      ];
+    })()
   );
 
+  useEffect(() => {
+    window.localStorage.setItem('worlds', JSON.stringify(worlds));
+  }, [worlds]);
+
   const { grids, determiners, currentGrid } = worlds[currentWorld];
-
-  // const [grid, updateGrid] = useReducer<
-  //   GridData,
-  //   [
-  //     | { action: 'reset' }
-  //     | { action: 'push'; powerUp: PowerUpValue; square: Point | undefined }
-  //     | { action: 'pop'; currentSquare: Point }
-  //     | { action: 'replace'; grid: GridData }
-  //   ]
-  // >(
-  //   (prev, data) => {
-  //     switch (data.action) {
-  //       case 'replace':
-  //         return data.grid;
-
-  //       case 'reset': {
-  //         const resetGrid = [];
-  //         for (let i = 0; i < 3; i++) {
-  //           const row = [];
-  //           for (let j = 0; j < 6; j++) {
-  //             row.push(undefined);
-  //           }
-  //           resetGrid.push(row);
-  //         }
-  //         return resetGrid;
-  //       }
-
-  //       case 'push': {
-  //         if (data.square == undefined) return prev;
-  //         const [currentRow, currentCol] = data.square;
-  //         return prev.map((row, rowIndex) =>
-  //           row.map((val, colIndex) =>
-  //             rowIndex == currentRow && colIndex == currentCol ? data.powerUp : val
-  //           )
-  //         );
-  //       }
-
-  //       case 'pop': {
-  //         let prevRow, prevCol;
-  //         if (data.currentSquare[1] - 1 >= 0) {
-  //           prevRow = data.currentSquare[0];
-  //           prevCol = data.currentSquare[1] - 1;
-  //         } else if (data.currentSquare[0] - 1 >= 0) {
-  //           prevRow = data.currentSquare[0] - 1;
-  //           prevCol = 5;
-  //         } else return prev;
-  //         return prev.map((row, rowIndex) =>
-  //           row.map((val, colIndex) =>
-  //             rowIndex == prevRow && colIndex == prevCol ? undefined : val
-  //           )
-  //         );
-  //       }
-  //     }
-  //   },
-  //   (() => {
-  //     const grid = [];
-  //     for (let i = 0; i < 3; i++) {
-  //       const row = [];
-  //       for (let j = 0; j < 6; j++) {
-  //         row.push(undefined);
-  //       }
-  //       grid.push(row);
-  //     }
-  //     return grid;
-  //   })()
-  // );
 
   const currentSquare: Point | undefined = useMemo<Point | undefined>(() => {
     const grid = grids[currentGrid];
@@ -230,31 +207,6 @@ export default function Builder() {
     }
     return undefined;
   }, [currentWorld, grids[currentGrid]]);
-
-  // const [determiners, toggleDeterminer] = useReducer<
-  //   Point[],
-  //   [
-  //     | { action: 'toggle'; square: [number, number] }
-  //     | { action: 'reset' }
-  //     | { action: 'replace'; determiners: [number, number][] }
-  //   ]
-  // >((prev, data) => {
-  //   switch (data.action) {
-  //     case 'reset':
-  //       return [];
-  //     case 'replace':
-  //       return data.determiners;
-
-  //     case 'toggle': {
-  //       const [row, col] = data.square;
-  //       const exists = prev.some(([prevRow, prevCol]) => prevRow == row && prevCol == col);
-  //       if (exists) {
-  //         return prev.filter(([prevRow, prevCol]) => !(prevRow == row && prevCol == col));
-  //       }
-  //       return [...prev, [row, col]];
-  //     }
-  //   }
-  // }, []);
 
   return (
     <>
