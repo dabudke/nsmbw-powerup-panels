@@ -270,6 +270,9 @@ export default function Builder() {
       </ButtonRow>
       <p>World {currentWorld + 1} / 9</p>
       <BuilderMiniView worlds={worlds} selectedWorld={currentWorld} selectedGrid={currentGrid} />
+      <ButtonRow>
+        <Button href="/">Back to app</Button>
+      </ButtonRow>
     </>
   );
 }
