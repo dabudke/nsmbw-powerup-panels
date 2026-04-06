@@ -14,7 +14,7 @@ export default defineConfig({
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
         builder: resolve(import.meta.dirname, 'builder/index.html'),
-        viewer: resolve(import.meta.dirname, 'builder/index.html')
+        explorer: resolve(import.meta.dirname, 'explorer/index.html')
       }
     }
   }
